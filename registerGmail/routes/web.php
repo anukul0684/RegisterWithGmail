@@ -26,6 +26,6 @@ Route::get('/hello/{name}',function($name){
     return "<h1>Hello, $name</h1>";
 });
 
-Route::get('/register/{title}','TestController@register');
+Route::get('/registers/{title}','TestController@register');
 
-Route::get('/register/{title}/{author}','TestController@registerName');
+Route::get('/registers/{title}/{author}','TestController@registerName');
