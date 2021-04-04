@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/hello',function(){
+    return '<h1>Hello World!</h1>';
+});
+
+Route::get('/hello/{name}',function($name){
+    return "<h1>Hello, $name</h1>";
+});
+
+Route::get('/register/{title}','TestController@register');
+
+Route::get('/register/{title}/{author}','TestController@registerName');

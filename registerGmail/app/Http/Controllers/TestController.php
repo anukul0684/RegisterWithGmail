@@ -16,6 +16,14 @@ class TestController extends Controller
         //
     }
 
+    public function register($title){
+        return "<h1>Title $title</h1>";
+    }
+
+    public function registerName($title,$author) {
+        return "<h1>Register $title for $author</h1>";
+    }
+
     /**
      * Show the form for creating a new resource.
      *
