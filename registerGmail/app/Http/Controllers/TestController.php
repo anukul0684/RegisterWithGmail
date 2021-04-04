@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Controllers\Frontend\HomeController;
+
 use Illuminate\Http\Request;
 
 class TestController extends Controller
@@ -20,7 +20,7 @@ class TestController extends Controller
         return "<h1>Title $title</h1>";
     }
 
-    public function registerName($title, $author) {
+    public function registerName($title,$author) {
         return "<h1>Register $title for $author</h1>";
     }
 
