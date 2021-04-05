@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/register/{title}','TestController@register');
+
+Route::get('/register/{title}/{author}','TestController@author');
