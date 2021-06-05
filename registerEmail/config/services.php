@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => env('Google_ACCESS_KEY_ID'),
+        'client_secret' => env('Google_SECRET_ACCESS_KEY'),
+        'redirect' => 'http://registeremail1.local/auth/google/callback',
+    ],
+
 ];
